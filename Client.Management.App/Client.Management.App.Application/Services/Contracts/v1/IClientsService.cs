@@ -7,6 +7,7 @@ namespace Client.Management.App.Application.Services.Contracts.v1;
 public interface IClientsService
 {
     [Get("/api/v1/inss/consulta-beneficios?cpf={cpf}")]
-    Task<HttpResponseMessage> ListBenefitsByCpfAsync([Query] ListBenefitsByCpfRequestDto authLoginRequestDto);
+    Task<HttpResponseMessage> ListBenefitsByCpfAsync([Authorize("Bearer")] string token, 
+        [Query] ListBenefitsByCpfRequestDto cpf);
 
 }

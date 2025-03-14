@@ -6,6 +6,4 @@ public record ListBenefitsByCpfRequestDto
 {
     [JsonPropertyName("cpf")]
     public string? DocumentNumber { get; init; }
-
-
 }

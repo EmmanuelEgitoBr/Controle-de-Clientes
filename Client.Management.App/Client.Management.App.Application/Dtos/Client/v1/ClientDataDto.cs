@@ -2,7 +2,7 @@
 
 namespace Client.Management.App.Application.Dtos.Client.v1;
 
-public record DataDto
+public record ClientDataDto
 {
     [JsonPropertyName("cpf")]
     public string documentNumber { get; set; } = string.Empty;
