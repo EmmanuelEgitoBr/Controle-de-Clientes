@@ -6,5 +6,5 @@ public record Response<T> where T : class
 {
     public HttpStatusCode StatusCode { get; set; }
     public T? Content { get; set; }
-    public string? Notifications { get; set; }
+    public string? Notification { get; set; }
 }

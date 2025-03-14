@@ -1,8 +1,8 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace Client.Management.App.Api.Services.Dtos.v1;
+namespace Client.Management.App.Application.Dtos.Auth.v1;
 
-public record LoginRequestDto
+public record GenerateAccessTokenRequestDto
 {
     [JsonPropertyName("username")]
     public string? Username { get; init; }
